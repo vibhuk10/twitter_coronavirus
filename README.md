@@ -17,11 +17,13 @@ I then reduced each of these two different maps by combining each of them into o
 Finally, I created visualizations for the data I created by making bar charts. These charts give the top 10 countries or the top 10 languages for two different hashtags: #coronavirus and #코로나바이러스. 
 
 These are the bar graphs for #coronavirus:
+
 <img src=coronaviruscountry.png />
 
 <img src=coronaviruslang.png />
 
 And these are the bar graphs for #코로나바이러스:
+
 <img src=코로나바이러스country.png />
 
 <img src=코로나바이러스lang.png />

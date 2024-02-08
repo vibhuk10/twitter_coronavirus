@@ -19,18 +19,17 @@ Finally, I created visualizations for the data I created by making bar charts. T
 These are the bar graphs for #coronavirus:
 
 <img src=coronaviruscountry.png />
-
 <img src=coronaviruslang.png />
 
 And these are the bar graphs for #코로나바이러스:
 
 <img src=코로나바이러스country.png />
-
 <img src=코로나바이러스lang.png />
 
 ## Alternative Reduce
 I also created another method for reducing and visualizing this data. In this method, we can compare the different hashtags by the number of tweets during 2020 with a line plot. This alternative-reduce file can take in numerous hashtags as parameters and graph them together in order to compare and visualize. 
 
 Some examples of this can be seen here:
+
 <img src=covid-19_corona.png />
 <img src=flu_doctor.png />

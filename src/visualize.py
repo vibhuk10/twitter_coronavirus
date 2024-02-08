@@ -34,9 +34,12 @@ for k,v in items:
 items_10 = items[:10]
 keys = [x[0] for x in items_10]
 values = [x[1] for x in items_10]
-sorted_indices = sorted(range(len(values)), reverse = True, key=lambda k: values[k])
-sorted_keys = [keys[i] for i in sorted_indices]
-sorted_values = sorted(values, reverse = True)
+
+sorted_keys = keys[::-1]
+sorted_values = values[::-1]
+#sorted_indices = sorted(range(len(values)), reverse = True, key=lambda k: values[k])
+#sorted_keys = [keys[i] for i in sorted_indices]
+#sorted_values = sorted(values, reverse = True)
 
 print(sorted_keys)
 print(sorted_values)

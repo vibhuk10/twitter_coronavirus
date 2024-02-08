@@ -12,6 +12,9 @@ args = parser.parse_args()
 import os
 import json
 from collections import Counter,defaultdict
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
 # open the input path
 with open(args.input_path) as f:
@@ -26,3 +29,20 @@ if args.percent:
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
 for k,v in items:
     print(k,':',v)
+
+# get the top 10 keys and sort from low to high
+items_10 = items[:10]
+keys = [x[0] for x in items_10]
+values = [x[1] for x in items_10]
+sorted_indices = sorted(range(len(values)), reverse = True, key=lambda k: values[k])
+sorted_keys = [keys[i] for i in sorted_indices]
+sorted_values = sorted(values, reverse = True)
+
+print(sorted_keys)
+print(sorted_values)
+#plot the data
+plt.bar(range(len(sorted_keys)), sorted_values,)
+plt.xticks(range(len(sorted_keys)), sorted_keys)
+plt.xlabel(args.input_path[8:])
+plt.ylabel('number of tweets')
+plt.savefig(args.key[1:] + args.input_path[8:] +'.png')

@@ -32,4 +32,4 @@ I also created another method for reducing and visualizing this data. In this me
 Some examples of this can be seen here:
 
 <img src=covid-19_corona.png />
-<img src=flu_doctor.png />
+<img src=flu_doctor_sick_virus.png />
